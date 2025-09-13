@@ -22,8 +22,6 @@ A simple and intuitive Todo List application built with React.js. This app allow
 
 ---
 
-## 📦 Installation
-
 ## Developer
 
 **Mohanad Ayoub** [GitHub profile](https://github.com/zlmohanadlz) - [Linkedin Profile](https://www.linkedin.com/in/mohanad-ayoub-55bb29382)
