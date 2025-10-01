@@ -1,88 +1,84 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
+body {
+	font-family: Inter;
 }
 
-*:focus {
-  outline: none;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
 }
 
-button {
-  border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 6px;
+::-webkit-scrollbar-track {
+	background: #f1f5f9; /* فاتح */
+	border-radius: 10px;
 }
 
-h1 {
-  font-size: 30px;
-  margin-bottom: 1rem;
-  text-align: center;
+::-webkit-scrollbar-thumb {
+	background: #3b82f6; /* أزرق متوسط */
+	border-radius: 10px;
+	transition: background 0.3s ease;
 }
 
-.container {
-  width: 500px;
-  margin: 20px auto;
-  text-align: center;
+::-webkit-scrollbar-thumb:hover {
+	background: #2563eb; /* أزرق أغمق */
 }
 
-.field {
-  padding: 20px;
-  background-color: #eee;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border-radius: 6px;
+::-webkit-scrollbar-thumb:active {
+	background: #1d4ed8; /* أزرق داكن */
 }
 
-.input {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+ul {
+	list-style: none;
+	padding: 0;
+}
+.app {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #333;
 }
 
-.add,
-.remove-all {
-  background-color: #f44336;
-  padding: 10px;
+.task {
+	transition: 0.3s all !important;
 }
 
-.tasks-container {
-  border-radius: 6px;
-  background-color: #eee;
-  padding: 20px;
-  margin-top: 20px;
-  list-style-type: none;
+.task:hover {
+	padding: 1rem 0;
+	box-shadow: 0 7px 7px rgb(1 1 1 / 30%);
 }
 
-.tasks {
-  list-style-type: none;
-  padding: 0;
+.icon-button {
+	transition: 0.3s all;
 }
 
-.tasks li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: white;
-  margin-bottom: 15px;
-  padding: 10px;
-  border-radius: 6px;
-  cursor: pointer;
+.icon-button:hover {
+	background-color: #c5c5c5 !important;
+	box-shadow: 3px 3px 3px rgb(1 1 1 / 30%);
 }
 
-.tasks li:hover {
-  background-color: #f7f7f7;
+/* Fonts */
+
+@font-face {
+	font-family: Inter;
+	src: url("/public/Fonts/Inter-Light.woff2");
+	font-weight: 300;
 }
 
-.tasks li button {
-  background-color: red;
-  font-weight: 600;
-  font-size: 10px;
-  padding: 2px 5px;
+@font-face {
+	font-family: Inter;
+	src: url("/public/Fonts/InterDisplay-Bold.woff2");
+	font-weight: bold;
 }
 
-.tasks .done {
-  opacity: 0.5;
+@font-face {
+	font-family: Inter;
+	src: url("/public/Fonts/InterDisplay-Regular.woff2");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Inter;
+	src: url("/public/Fonts/Inter-Black.woff2");
+	font-weight: 900;
 }
