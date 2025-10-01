@@ -131,3 +131,7 @@ src/
 ├── index.js # Entry point
 └── styles.css # Custom styles (scrollbar, etc.)
 ```
+
+## Developer
+
+**Mohanad Ayoub** [GitHub profile](https://github.com/zlmohanadlz) - [Linkedin Profile](https://www.linkedin.com/in/mohanad-ayoub-55bb29382)
